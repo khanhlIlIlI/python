@@ -1,0 +1,92 @@
+1. biến/ variables
+  a=1
+  b= voice #voice là giá trị của biến
+  biến có thể đổi tên tuỳ biến chứ không cố định
+  có 4 loại định dạng giá trị của biến:
+    int : số nguyên
+    float : số thực
+    str: chuỗi kí tự ( ví dụ 8+8 = 88 còn ở định dạng int/float thì là 8+8=16)
+    boolean: True/False
+2. print
+print("a")
+print(a)
+giải thích: print("a") thì in ra CHỮ a
+            print(a) thì in ra giá trị của biến tên a
+3.input
+ten_bien = input("")
+có thể thêm int() hoặc các giá trị của biến khác ở ngoài input để xác định định dạng của biến
+*mặc định thì là giá tri str
+"..." ở trong input để người viết code nhập vào để giao tiếp với người dùng
+ví dụ như: n=int(input("nhập n=") thì sẽ in ra màn hình của người dùng là nhập n= , khi đó người dùng nhập giá trị họ muốn vào
+
+4. If ... else
+if...else là cấu trúc điều khiển dùng để đưa ra quyết định trong lập trình. Chương trình sẽ kiểm tra một điều kiện:
+
+Nếu điều kiện đúng (true) → thực hiện khối lệnh của if.
+Nếu điều kiện sai (false) → thực hiện khối lệnh của else.
+Cú pháp chung
+if điều_kiện :
+    Thực hiện khi điều kiện đúng
+else :
+    Thực hiện khi điều kiện sai
+| Toán tử | Ý nghĩa           | Ví dụ    |
+| ------- | ----------------- | -------- |
+| `==`    | Bằng              | `a == b` |
+| `!=`    | Khác              | `a != b` |
+| `>`     | Lớn hơn           | `a > b`  |
+| `<`     | Nhỏ hơn           | `a < b`  |
+| `>=`    | Lớn hơn hoặc bằng | `a >= b` |
+| `<=`    | Nhỏ hơn hoặc bằng | `a <= b` |
+| Phép toán            | Ký hiệu | Ví dụ     | Kết quả |
+| -------------------- | ------- | --------- | ------- |
+| Nhân                 | `*`     | `3 * 4`   | `12`    |
+| Chia                 | `/`     | `10 / 2`  | `5.0`   |
+| Chia lấy phần nguyên | `//`    | `10 // 3` | `3`     |
+| Chia lấy dư          | `%`     | `10 % 3`  | `1`     |
+| Lũy thừa             | `**`    | `2 ** 3`  | `8`     |
+
+
+5. Vòng lặp for
+
+for dùng để lặp qua một dãy giá trị (số, chuỗi, danh sách, v.v.) và thực hiện cùng một đoạn lệnh nhiều lần.
+
+Cú pháp
+for biến in range(m,n,l):
+    # Khối lệnh
+l là khoảng cách giữa mỗi lần tăng/giảm giá trị biến, ko ghi thì mặc định = 1
+m là giá trị bắt đầu, ko ghi mặc định = 0
+n-1 là giá trị kết thúc, ví dụ muốn chạy đến 5 thì n=6
+
+
+while là vòng lặp dùng khi chưa biết trước sẽ lặp bao nhiêu lần. Vòng lặp sẽ tiếp tục chạy miễn là điều kiện còn đúng.
+
+Cú pháp
+while điều_kiện:
+    # Khối lệnh
+Ví dụ 1: Đếm từ 1 đến 5
+i = 1
+
+while i <= 5:
+    print(i)
+    i += 1
+
+Kết quả:
+
+1
+2
+3
+4
+5
+Giải thích
+Ban đầu i = 1.
+Điều kiện i <= 5 đúng nên in 1.
+i += 1 làm i tăng lên 2.
+Tiếp tục cho đến khi i = 6, điều kiện sai thì dừng.
+
+| `for`                                    | `while`                                  |
+| ---------------------------------------- | ---------------------------------------- |
+| Biết trước số lần lặp                    | Chưa biết trước số lần lặp               |
+| Thường dùng với `range()` hoặc danh sách | Thường dùng với điều kiện                |
+| Ít bị quên cập nhật biến                 | Dễ gây vòng lặp vô hạn nếu quên cập nhật |
+
+
